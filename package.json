@@ -8,7 +8,11 @@
     "frontend-client:dev": "nx run frontend-client:serve:development",
     "frontend-client:build": "nx run frontend-client:build",
     "frontend-admin:dev": "nx run frontend-admin:serve:development",
-    "frontend-admin:build": "nx run frontend-admin:build"
+    "frontend-admin:build": "nx run frontend-admin:build",
+    "backend-api:dev": "nx run backend-api:serve:development",
+    "backend-api:build": "nx run backend-api:build",
+    "db:start": "cp .env ./docker-compose && cd docker-compose && docker-compose up -d",
+    "db:stop": "cd docker-compose && docker-compose stop && rm .env"
   },
   "private": true,
   "dependencies": {
