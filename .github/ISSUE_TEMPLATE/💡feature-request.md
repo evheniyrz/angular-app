@@ -1,7 +1,7 @@
 ---
 name: "\U0001F4A1Feature request"
 about: Suggest an idea for this project
-title: ''
+title: 'feat(): [WIP]'
 labels: ''
 assignees: ''
 
