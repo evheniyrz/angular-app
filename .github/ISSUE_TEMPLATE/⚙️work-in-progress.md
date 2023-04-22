@@ -1,7 +1,7 @@
 ---
 name: "⚙️Work in Progress"
 about: Tasks of the current stage of development
-title: "[WIP]"
+title: 'feat(): [WIP]'
 labels: WIP
 assignees: ''
 
