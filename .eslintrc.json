@@ -14,11 +14,18 @@
             "depConstraints": [
               {
                 "sourceTag": "scope:frontend-client",
-                "onlyDependOnLibsWithTags": ["scope:frontend-client"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:frontend-client",
+                  "type:app"
+                ]
               },
               {
                 "sourceTag": "scope:frontend-admin",
-                "onlyDependOnLibsWithTags": ["scope:frontend-admin"]
+                "onlyDependOnLibsWithTags": ["scope:frontend-admin", "type:app"]
+              },
+              {
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": "type:app"
               }
             ]
           }
