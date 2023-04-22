@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "angular-app",
   "sourceRoot": "apps/frontend/client/src",
-  "tags": ["scope:client"],
+  "tags": ["scope:frontend-client", "type:app"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
@@ -60,7 +60,10 @@
           "port": 4201
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/frontend/client/proxy.conf.json"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
