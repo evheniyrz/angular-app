@@ -2,7 +2,14 @@
   "name": "angular-app",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "ng":"nx",
+    "nx": "nx",
+    "frontend-client:dev": "nx run frontend-client:serve:development",
+    "frontend-client:build": "nx run frontend-client:build",
+    "frontend-admin:dev": "nx run frontend-admin:serve:development",
+    "frontend-admin:build": "nx run frontend-admin:build"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.2.0",
