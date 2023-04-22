@@ -16,16 +16,19 @@
                 "sourceTag": "scope:frontend-client",
                 "onlyDependOnLibsWithTags": [
                   "scope:frontend-client",
-                  "type:app"
+                  "scope:backend-api"
                 ]
               },
               {
                 "sourceTag": "scope:frontend-admin",
-                "onlyDependOnLibsWithTags": ["scope:frontend-admin", "type:app"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:frontend-admin",
+                  "scope:backend-api"
+                ]
               },
               {
-                "sourceTag": "type:app",
-                "onlyDependOnLibsWithTags": "type:app"
+                "sourceTag": "scope:backend-api",
+                "onlyDependOnLibsWithTags": ["scope:backend-api"]
               }
             ]
           }
