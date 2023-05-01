@@ -1,0 +1,10 @@
+@import 'utils';
+
+.demo {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  background-color: $test-var;
+  color: aliceblue;
+}
