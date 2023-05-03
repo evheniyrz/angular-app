@@ -16,7 +16,8 @@
                 "sourceTag": "scope:frontend-client",
                 "onlyDependOnLibsWithTags": [
                   "scope:frontend-client",
-                  "scope:backend-api"
+                  "scope:backend-api",
+                  "type:lib"
                 ]
               },
               {

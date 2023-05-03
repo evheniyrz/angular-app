@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+import { UiComponentsModule } from '@angular-app/ui-components';
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
     BrowserAnimationsModule,
-    MatButtonModule,
+    UiComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

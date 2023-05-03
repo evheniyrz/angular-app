@@ -1,0 +1,19 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+a,
+button {
+  transition: all 250ms ease;
+}

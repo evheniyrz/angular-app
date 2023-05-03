@@ -1,0 +1,17 @@
+@import 'utils';
+:host {
+  display: block;
+
+  .demo {
+    width: 1200px;
+    margin: 10px auto;
+    padding: 2em;
+    text-align: center;
+    background-color: $test-var;
+    color: aliceblue;
+  }
+
+  .test-ff {
+    font-family: $ff-open-sans;
+  }
+}
