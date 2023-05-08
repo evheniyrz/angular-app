@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-app/shared/data-access/interfaces": [
+        "libs/shared/data-access/interfaces/src/index.ts"
+      ],
       "@angular-app/ui-components": ["libs/ui-components/src/index.ts"]
     }
   },

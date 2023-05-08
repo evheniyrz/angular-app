@@ -17,7 +17,8 @@
                 "onlyDependOnLibsWithTags": [
                   "scope:frontend-client",
                   "scope:backend-api",
-                  "type:lib"
+                  "type:lib",
+                  "scope:shared"
                 ]
               },
               {
@@ -30,6 +31,30 @@
               {
                 "sourceTag": "scope:backend-api",
                 "onlyDependOnLibsWithTags": ["scope:backend-api"]
+              },
+              {
+                "sourceTag": "lib-type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "lib-type:data-access",
+                  "lib-type:utils",
+                  "lib-type:feature",
+                  "lib-type:ui"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:ui",
+                "onlyDependOnLibsWithTags": ["lib-type:ui", "lib-type:utils"]
+              },
+              {
+                "sourceTag": "lib-type:data-access",
+                "onlyDependOnLibsWithTags": [
+                  "lib-type:data-access",
+                  "lib-type:utils"
+                ]
+              },
+              {
+                "sourceTag": "lib-type:utils",
+                "onlyDependOnLibsWithTags": ["lib-type:utils"]
               }
             ]
           }
