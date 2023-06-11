@@ -30,7 +30,10 @@
               },
               {
                 "sourceTag": "scope:backend-api",
-                "onlyDependOnLibsWithTags": ["scope:backend-api"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:backend-api",
+                  "lib-type:data-access"
+                ]
               },
               {
                 "sourceTag": "lib-type:feature",

@@ -1,4 +1,4 @@
-import { IUser } from 'libs/shared/data-access/interfaces/src/lib/entities/user.interface';
+import { IUser } from '@angular-app/shared/data-access/interfaces';
 import {
   Column,
   CreateDateColumn,
@@ -13,17 +13,22 @@ import {
 export class UserEntity implements IUser {
   @PrimaryGeneratedColumn()
   id: number;
+
   @Column({
-    length: 50,
+    length: 50, 
     unique: true,
   })
   username: string;
+
   @CreateDateColumn()
   created: string;
+
   @UpdateDateColumn()
   updated: string;
+
   @Column()
   email: string;
+
   @Column()
   password: string;
 }

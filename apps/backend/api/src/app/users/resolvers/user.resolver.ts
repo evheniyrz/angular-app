@@ -7,7 +7,7 @@ import { UserEntity } from '../entities/user.entity';
 export class UserResolver {
   constructor(private readonly userService: UserService) {}
 
-  async whoAmI(@CurrentUser() user: UserEntity) {
+  async whoAmI(@CurrentUser() user: UserEntity): Promise<UserEntity> {
     return this.userService.findById(user.id);
   }
 }
